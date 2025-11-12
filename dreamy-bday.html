@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Birthday JUNJUN💖</title>
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body {
+  height: 100%;
+  font-family: "Poppins", "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, #2a1e5c 0%, #0b0824 100%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(255,200,255,0.1);
+  text-align: center;
+  padding: 40px 30px 50px;
+  max-width: 720px;
+  width: 90%;
+  overflow: hidden;
+}
+
+canvas#confetti {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+.photo-slider {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(255,255,255,0.2);
+}
+.photo-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 1s ease-in-out;
+}
+
+h1 {
+  font-size: 1.9rem;
+  margin-bottom: 6px;
+  color: #ffd6f9;
+}
+.chinese {
+  color: #cfcce8;
+  margin-bottom: 20px;
+}
+.message {
+  color: #e9e4ff;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0 auto 25px;
+  max-width: 520px;
+  white-space: pre-line;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+button {
+  background: #e69ffb;
+  border: none;
+  color: #2a134b;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+button:hover {
+  background: #f8d1ff;
+}
+
+footer {
+  margin-top: 25px;
+  color: #b9b6f0;
+  font-size: 0.9rem;
+}
+
+#secretMsg {
+  margin-top: 20px;
+  color: #ffe7ff;
+  background: rgba(255,255,255,0.1);
+  padding: 15px;
+  border-radius: 10px;
+  display: none;
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+
+<body>
+  <div class="card">
+    <canvas id="confetti"></canvas>
+
+    <div class="content">
+      <div class="photo-slider">
+        <img id="photo" src="img/foto kecil.jpg" alt="Foto Pacar">
+      </div>
+
+      <h1>祝你生日快乐, 宝贝 🌙</h1>
+      <p class="chinese">
+        DONT FORGET TO PLAY THE VOICE!!
+        ps: sorry for bad chinese
+      </p>
+
+      <p class="message" id="message">
+      在今晚的星空下，我希望星星能记录下所有为你的祈愿。享受你的特别日子—我永远在你身边。
+      如果我的礼物不多，很抱歉，这是我21年来第一次给别人送礼物并自己包装。如果你认为我不是故意的，那你就错了。我很困惑，以至于我在互联网上找了一个关于如何包装礼物的视频教程✨  
+        <br><br>
+        — 林林💕
+      </p>
+
+
+
+      <div id="secretMsg"></div>
+    <audio controls x`x` src="audio/ror.mp3"></audio>
+</body>
+</html>
