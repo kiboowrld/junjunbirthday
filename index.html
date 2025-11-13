@@ -43,9 +43,11 @@ canvas#confetti {
   z-index: 2;
 }
 
+/* === FIX FOTO RESPONSIVE === */
 .photo-slider {
-  width: 150px;
-  height: 150px;
+  width: 50vw;
+  max-width: 220px;
+  aspect-ratio: 1 / 1;
   margin: 0 auto 15px;
   border-radius: 50%;
   overflow: hidden;
@@ -55,8 +57,10 @@ canvas#confetti {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center top;
   transition: opacity 1s ease-in-out;
 }
+/* === END FIX FOTO === */
 
 h1 {
   font-size: 1.9rem;
@@ -115,6 +119,13 @@ footer {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+/* RESPONSIVE TEXT */
+@media (max-width: 480px) {
+  h1 { font-size: 1.4rem; }
+  .message { font-size: 0.9rem; padding: 0 5px; }
+  .card { padding: 25px 20px 40px; }
+}
 </style>
 </head>
 
@@ -134,7 +145,7 @@ footer {
       </p>
 
       <p class="message" id="message">
-      我可能永远不会经常这么说，但今天我必须说出来。谢谢你进入我的生活。自从你来了，我的世界曾经只有黑白分明，现在有了所有的彩虹。
+      谢谢你进入我的生活。自从你来了，我的世界曾经只有黑白分明，现在有了所有的彩虹。
 
 所以我有理由笑得更灿烂，更努力地战斗，并成为更好的自己。
 
@@ -150,6 +161,7 @@ footer {
 </body>
     </footer>
 </html>
+
 
 
 
