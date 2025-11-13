@@ -43,7 +43,7 @@ canvas#confetti {
   z-index: 2;
 }
 
-/* === FIX FOTO RESPONSIVE === */
+/* === FOTO RESPONSIVE & RAPI === */
 .photo-slider {
   width: 50vw;
   max-width: 220px;
@@ -60,7 +60,7 @@ canvas#confetti {
   object-position: center top;
   transition: opacity 1s ease-in-out;
 }
-/* === END FIX FOTO === */
+/* === END FOTO === */
 
 h1 {
   font-size: 1.9rem;
@@ -98,6 +98,21 @@ button {
 button:hover {
   background: #f8d1ff;
 }
+
+/* === AUDIO PLAYER RAPI === */
+.audio-player {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  z-index: 2;
+}
+audio {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 8px;
+  outline: none;
+}
+/* === END AUDIO === */
 
 footer {
   margin-top: 25px;
@@ -140,27 +155,33 @@ footer {
 
       <h1>祝你生日快乐, 宝贝 🌙</h1>
       <p class="chinese">
-        DONT FORGET TO PLAY THE VOICE!!
+        DONT FORGET TO PLAY THE VOICE!!<br>
         ps: sorry for bad chinese
       </p>
 
       <p class="message" id="message">
-      谢谢你进入我的生活。自从你来了，我的世界曾经只有黑白分明，现在有了所有的彩虹。
+我可能永远不会经常这么说，但今天我必须说出来。谢谢你进入我的生活。自从你来了，我的世界曾经只有黑白分明，现在有了所有的彩虹。
 
 所以我有理由笑得更灿烂，更努力地战斗，并成为更好的自己。
 
 在你的特殊日子里，我只想说一件事：我是多么感激宇宙在这一天创造了你。我爱你，我无法用语言表达。愿今年带来你应得的所有幸福。✨
 
-        减少你的愤怒，我希望你能对我更温暖，更爱我。
-        <br>
-        — Michael Satria (林林)
-      </p>
-
+减少你的愤怒，我希望你能对我更温暖，更爱我。
+<br>
+        
       <div id="secretMsg"></div>
-    <audio controls x`x` src="audio/ror.mp3"></audio>
+
+      <!-- AUDIO PLAYER -->
+      <div class="audio-player">
+        <audio controls src="audio/ror.mp3"></audio>
+      </div>
+
+      <footer>— Michael Satria (林林)</footer>
+    </div>
+  </div>
 </body>
-    </footer>
 </html>
+
 
 
 
